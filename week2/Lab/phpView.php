@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
+        
+        
+       <link rel="stylesheet" type="text/css" href="styles.css"></link>
+
     </head>
     <body>
+        
+       
+        
         <?php
         /*
          * include the data base connect file
@@ -38,7 +45,7 @@
 
         <table>
             <thead>
-                <tr>
+                <tr><table border="1">
                     <th>ID</th>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -62,16 +69,17 @@
             ?>
             
             <?php foreach ($results as $row): ?>
-                <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['firstname']; ?></td>
-                    <td><?php echo $row['lastname']; ?></td>
+            <tr>     
+                     <td><?php echo $row['id']; ?></td>
+                     <td><?php echo $row['firstname']; ?></td>
+                     <td><?php echo $row['lastname']; ?></td>
                      <td><?php echo $row['dob']; ?></td>
-                     <td><?php echo $row['height']; ?></td>    
+                     <td><?php echo $row['height']; ?></td> 
+                     
+                     
                 </tr>
             <?php endforeach; ?>
         </table>
 
     </body>
 </html>
-

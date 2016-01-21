@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
+        
+               <link rel="stylesheet" type="text/css" href="styles.css"></link>
+
     </head>
     <body>
         <?php
@@ -42,7 +45,7 @@
         ?>
 
 
-        <h1><?php echo $results; ?></h1>
+        <h1><?php echo $results; ?>
 
         <form method="post" action="#">            
             First Name <input type="text" value="" name="firstname" />
